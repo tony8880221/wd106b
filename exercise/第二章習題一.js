@@ -1,7 +1,13 @@
-i=1;
-sum=1;
-for(i=1;i<=10;i++)
+function abc(a)
 {
-   sum=sum*i;
+    a;
+    var i;
+    ans=1;
+    for(i=1;i<=a;i++)
+    {
+        ans=ans*i;
+
+    }
+    console.log("",ans);
 }
-console.log("sum=",sum);
+abc(10)
