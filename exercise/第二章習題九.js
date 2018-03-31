@@ -1,21 +1,31 @@
-// JavaScript source code
-var a, b;
-function countPrime(a, b)
+var a;
+var count2;
+function isPrime(a)
 {
-    var i;
-    var j;
-    var count=0;
-    for (i = a; i < b; i++)
+    var i = 2;
+    var counter=0;
+    for (i = 2; i < a;i++)
     {
-        for (j = 2; j < i; j++)
+        if (a % i == 0)
         {
-            if (i % j == 0)
-            {
-                count++;
-            }
+            counter++;
         }
     }
-    console.log("", count);
+    if (counter == 0)
+    {
+        count2++;
+    }
 
 }
-countPrime(3, 7);
+function primecount(b,c)
+{
+    var j;
+    for(j=b;j<=c;j++)
+    {
+        isPrime(j);
+
+    }
+    console.log("",count2);
+}
+primecount(3,7);
+
